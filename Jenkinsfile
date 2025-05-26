@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/NguyenAnhHao1009/my-first-freestyle-project.git'
-            }
-        }
-
         stage('Compile') {
             steps {
                 sh 'javac MyLunch.java'
